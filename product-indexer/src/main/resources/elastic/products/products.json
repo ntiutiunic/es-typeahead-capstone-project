@@ -1,0 +1,52 @@
+[
+  {
+    "id": "1",
+    "name": "Nike Air Max 270",
+    "brand": "Nike",
+    "color": "black",
+    "size": "42",
+    "price": 129.99,
+    "category": "shoes",
+    "description": "The Nike Air Max 270 delivers visible cushioning under every step with a large window and plush feel."
+  },
+  {
+    "id": "2",
+    "name": "Adidas Ultraboost 22",
+    "brand": "Adidas",
+    "color": "white",
+    "size": "43",
+    "price": 179.99,
+    "category": "shoes",
+    "description": "The Adidas Ultraboost 22 features a responsive Boost midsole and a Primeknit upper for a snug, sock-like fit."
+  },
+  {
+    "id": "3",
+    "name": "Puma RS-X",
+    "brand": "Puma",
+    "color": "red",
+    "size": "41",
+    "price": 99.99,
+    "category": "shoes",
+    "description": "The Puma RS-X combines retro style with modern comfort for a bold look that stands out."
+  },
+  {
+    "id": "4",
+    "name": "Nike Air Force 1",
+    "brand": "Nike",
+    "color": "white",
+    "size": "44",
+    "price": 89.99,
+    "category": "shoes",
+    "description": "The Nike Air Force 1 is a classic sneaker that has stood the test of time with its clean design and comfortable fit."
+  },
+  {
+    "id": "5",
+    "name": "Adidas NMD R1",
+    "brand": "Adidas",
+    "color": "black",
+    "size": "42",
+    "price": 149.99,
+    "category": "shoes",
+    "description": "The Adidas NMD R1 features a responsive Boost midsole and a Primeknit upper for a modern, comfortable fit."
+  }
+] 

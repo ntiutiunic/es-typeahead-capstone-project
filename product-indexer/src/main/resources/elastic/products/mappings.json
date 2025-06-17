@@ -1,0 +1,43 @@
+{
+  "properties": {
+    "id": {
+      "type": "keyword"
+    },
+    "name": {
+      "type": "text",
+      "analyzer": "text_analyzer",
+      "fields": {
+        "shingles": {
+          "type": "text",
+          "analyzer": "shingle_analyzer"
+        }
+      }
+    },
+    "brand": {
+      "type": "text",
+      "analyzer": "text_analyzer",
+      "fields": {
+        "shingles": {
+          "type": "text",
+          "analyzer": "shingle_analyzer"
+        }
+      }
+    },
+    "color": {
+      "type": "keyword"
+    },
+    "size": {
+      "type": "keyword"
+    },
+    "price": {
+      "type": "float"
+    },
+    "category": {
+      "type": "keyword"
+    },
+    "description": {
+      "type": "text",
+      "analyzer": "text_analyzer"
+    }
+  }
+} 

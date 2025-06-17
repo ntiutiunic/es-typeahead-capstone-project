@@ -1,0 +1,5 @@
+POST my_second_index/_bulk
+{"index": {"_index": "my_second_index", "_id": "1"}}
+{"text1": "Test_text", "text2": "Another_test_text"}
+{"update": {"_index": "my_second_index", "_id": "1"}}
+{"doc": {"text1": "Test_text_UPDATED", "text3": "Just_one_more_text"}} 
