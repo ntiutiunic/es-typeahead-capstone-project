@@ -1,9 +1,14 @@
 package com.griddynamics.esgraduationproject.common;
 
 import com.griddynamics.esgraduationproject.service.TypeaheadService;
+import org.elasticsearch.action.admin.indices.refresh.RefreshRequest;
+import org.elasticsearch.client.RequestOptions;
+import org.elasticsearch.client.RestHighLevelClient;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+
+import java.io.IOException;
 
 import static org.hamcrest.Matchers.greaterThan;
 import static org.hamcrest.Matchers.greaterThanOrEqualTo;
@@ -18,10 +23,26 @@ public class ExercisesIntegrationTest extends BaseTest {
     @Autowired
     TypeaheadService typeaheadService;
 
+    @Autowired
+    RestHighLevelClient esClient;
+
     @Before
-    public void init() throws InterruptedException {
+    public void init() throws InterruptedException, IOException {
         typeaheadService.recreateIndex();
-        Thread.sleep(500); // TASK 6: Why if we change 1100 to 500, then some tests fail? How to fix it, so that all tests pass with 500?
+        waitForIndexReady();
+    }
+
+    /**
+     * TASK 6: Wait for index to be ready instead of using arbitrary sleep
+     * This ensures all tests pass consistently regardless of timing
+     */
+    private void waitForIndexReady() throws IOException, InterruptedException {
+        // Refresh the index to ensure all documents are searchable
+        RefreshRequest refreshRequest = new RefreshRequest("test_typeaheads");
+        esClient.indices().refresh(refreshRequest, RequestOptions.DEFAULT);
+        
+        // Small delay to ensure refresh is complete
+        Thread.sleep(100);
     }
 
     // TASK 1: Fix 2 bugs in config and recreation/filling of the index.
