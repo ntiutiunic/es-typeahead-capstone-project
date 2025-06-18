@@ -1,0 +1,19 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: product-search-service
+
+elasticsearch:
+  host: localhost
+  port: 9200
+  scheme: http
+
+com:
+  griddynamics:
+    es:
+      graduation:
+        project:
+          product:
+            index: product_index 

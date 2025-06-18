@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ES Graduation Project
 
 ## Overview
@@ -85,3 +86,6 @@ Each major task is a separate commit. You can follow the project progress and re
 
 ## Contact
 For any questions, please contact the repository owner. 
+=======
+# es-typeahead-capstone-project
+>>>>>>> a3f3488e52239dd5e8a2a540c84659d320b05b46
