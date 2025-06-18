@@ -2,7 +2,7 @@ com.griddynamics.es.graduation.project:
   esHost: http://localhost:9200
   user:
   pass:
-  index: typeaheads
+  index: product_index
 
   files:
     mappings: classpath:elastic/typeaheads/mappings.json

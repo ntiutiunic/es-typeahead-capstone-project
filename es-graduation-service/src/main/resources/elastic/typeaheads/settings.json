@@ -3,12 +3,21 @@
   "number_of_replicas": 0,
   "analysis": {
     "analyzer": {
-      "text_default": {
+      "text_analyzer": {
         "type": "custom",
         "tokenizer": "standard",
         "filter": [
           "lowercase",
           "asciifolding"
+        ]
+      },
+      "shingle_analyzer": {
+        "type": "custom",
+        "tokenizer": "standard",
+        "filter": [
+          "lowercase",
+          "asciifolding",
+          "shingle"
         ]
       }
     }

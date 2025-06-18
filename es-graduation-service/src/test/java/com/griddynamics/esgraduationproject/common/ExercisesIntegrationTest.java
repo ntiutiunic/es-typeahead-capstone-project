@@ -2,7 +2,6 @@ package com.griddynamics.esgraduationproject.common;
 
 import com.griddynamics.esgraduationproject.service.TypeaheadService;
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -39,7 +38,6 @@ public class ExercisesIntegrationTest extends BaseTest {
     }
 
     // TASK 2: Fix bulk data file
-    @Ignore
     @Test
     public void testGetAllReturns36documents() {
         client

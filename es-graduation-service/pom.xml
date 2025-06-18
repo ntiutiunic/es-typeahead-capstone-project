@@ -3,31 +3,17 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
-    <groupId>com.griddynamics</groupId>
-    <artifactId>es-graduation-project</artifactId>
-    <version>1.0</version>
-    <packaging>pom</packaging>
-
-    <name>ESGraduationProject</name>
-    <description>ES Graduation Project</description>
     <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.1.6.RELEASE</version>
+        <groupId>com.griddynamics</groupId>
+        <artifactId>es-graduation-project</artifactId>
+        <version>1.0</version>
     </parent>
 
-    <properties>
-        <elastic.transport.client.version>7.2.1</elastic.transport.client.version>
-        <commons.io.version>2.6</commons.io.version>
-        <!--<logstash.logback.encoder.version>5.2</logstash.logback.encoder.version>-->
-        <commons.lang.version>3.7</commons.lang.version>
-        <!--<commons.collections4.version>4.2</commons.collections4.version>-->
-        <lombok.version>1.18.4</lombok.version>
-        <java.version>11</java.version>
-        <maven.compiler.source>11</maven.compiler.source>
-        <maven.compiler.target>11</maven.compiler.target>
-    </properties>
+    <artifactId>es-graduation-service</artifactId>
+    <packaging>jar</packaging>
+
+    <name>ESGraduationService</name>
+    <description>ES Graduation Service</description>
 
     <dependencies>
         <!--SPRING -->
@@ -81,13 +67,7 @@
             <version>3.0.7</version>
             <scope>test</scope>
         </dependency>
-
     </dependencies>
-
-    <modules>
-        <module>product-indexer</module>
-        <module>es-graduation-service</module>
-    </modules>
 
     <build>
         <plugins>
@@ -102,16 +82,6 @@
                     </execution>
                 </executions>
             </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.8.1</version>
-                <configuration>
-                    <source>11</source>
-                    <target>11</target>
-                </configuration>
-            </plugin>
         </plugins>
     </build>
-
-</project>
+</project> 
