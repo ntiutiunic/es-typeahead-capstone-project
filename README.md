@@ -82,9 +82,3 @@ Each major task is a separate commit. You can follow the project progress and re
 - [x] Both services start without errors
 - [x] API returns correct results for all example queries
 - [x] Integration tests cover all required cases (empty, happy path, facets, sort, pagination, filters, shingles)
-
-## Contact
-For any questions, please contact the repository owner. 
-=======
-# es-typeahead-capstone-project
->>>>>>> a3f3488e52239dd5e8a2a540c84659d320b05b46
