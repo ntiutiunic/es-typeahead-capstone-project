@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # ES Graduation Project
 
 ## Overview
